@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:title="首頁"
+            android:icon="@drawable/homepage">
+        </item>
+    </group>
+
+    <item android:title="統計圖表"
+        android:icon="@drawable/ic_menu_camera">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_realtime"
+                    android:icon="@drawable/line_chart"
+                    android:title="即時圖表" />
+                <item
+                    android:id="@+id/nav_accumulation"
+                    android:icon="@drawable/bar_chart"
+                    android:title="累計圖表" />
+                <item
+                    android:id="@+id/nav_trend"
+                    android:icon="@drawable/summary_graph"
+                    android:title="趨勢圖表" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="其他">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_setting"
+                    android:title="Setting"
+                    android:icon="@drawable/setting">
+                </item>
+            </group>
+        </menu>
+    </item>
+</menu>
